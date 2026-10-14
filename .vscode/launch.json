@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "ЛР1 — багатопотокова сума",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "ЛР1: зібрати",
+      "program": "${workspaceFolder}/lab1/bin/Debug/net8.0/Lab1.dll",
+      "cwd": "${workspaceFolder}/lab1",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    }
+  ]
+}
