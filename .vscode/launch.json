@@ -30,6 +30,16 @@
       "cwd": "${workspaceFolder}/lab3",
       "console": "integratedTerminal",
       "stopAtEntry": false
+    },
+    {
+      "name": "ЛР4 — найбільше власне число L1",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "ЛР4: зібрати",
+      "program": "${workspaceFolder}/lab4/bin/Release/net8.0/Lab4.dll",
+      "cwd": "${workspaceFolder}/lab4",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
     }
   ]
 }

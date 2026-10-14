@@ -78,6 +78,35 @@
       "dependsOn": "ЛР3: зібрати",
       "group": "test",
       "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "ЛР4: зібрати",
+      "type": "process",
+      "command": "dotnet",
+      "args": [
+        "build",
+        "${workspaceFolder}/lab4/Lab4.csproj",
+        "-c",
+        "Release"
+      ],
+      "group": "build",
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "ЛР4: знайти L1",
+      "type": "process",
+      "command": "dotnet",
+      "args": [
+        "run",
+        "-c",
+        "Release",
+        "--no-build",
+        "--project",
+        "${workspaceFolder}/lab4/Lab4.csproj"
+      ],
+      "dependsOn": "ЛР4: зібрати",
+      "group": "test",
+      "problemMatcher": "$msCompile"
     }
   ]
 }
