@@ -26,6 +26,29 @@
       ],
       "group": "test",
       "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "ЛР2: зібрати",
+      "type": "process",
+      "command": "dotnet",
+      "args": [
+        "build",
+        "${workspaceFolder}/lab2/Lab2.csproj"
+      ],
+      "group": "build",
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "ЛР2: запустити",
+      "type": "process",
+      "command": "dotnet",
+      "args": [
+        "run",
+        "--project",
+        "${workspaceFolder}/lab2/Lab2.csproj"
+      ],
+      "group": "test",
+      "problemMatcher": "$msCompile"
     }
   ]
 }

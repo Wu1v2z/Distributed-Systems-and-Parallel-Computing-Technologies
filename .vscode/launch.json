@@ -10,6 +10,16 @@
       "cwd": "${workspaceFolder}/lab1",
       "console": "integratedTerminal",
       "stopAtEntry": false
+    },
+    {
+      "name": "ЛР2 — довільна кількість підмасивів",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "ЛР2: зібрати",
+      "program": "${workspaceFolder}/lab2/bin/Debug/net8.0/Lab2.dll",
+      "cwd": "${workspaceFolder}/lab2",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
     }
   ]
 }
