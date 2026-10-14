@@ -61,6 +61,17 @@
       "cwd": "${workspaceFolder}/lab5",
       "console": "integratedTerminal",
       "stopAtEntry": false
+    },
+    {
+      "name": "ЛР6 — host-кластер L1 L2 L3",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "ЛР6: зібрати",
+      "program": "${workspaceFolder}/lab6/bin/Release/net8.0/Lab6.dll",
+      "args": ["--slave-host", "127.0.0.1", "--port", "5055"],
+      "cwd": "${workspaceFolder}/lab6",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
     }
   ]
 }

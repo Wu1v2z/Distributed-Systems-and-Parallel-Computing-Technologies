@@ -156,6 +156,40 @@
       "dependsOn": "ЛР5: зібрати",
       "group": "test",
       "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "ЛР6: зібрати",
+      "type": "process",
+      "command": "dotnet",
+      "args": [
+        "build",
+        "${workspaceFolder}/lab6/Lab6.csproj",
+        "-c",
+        "Release"
+      ],
+      "group": "build",
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "ЛР6: запустити host-кластер",
+      "type": "process",
+      "command": "dotnet",
+      "args": [
+        "run",
+        "-c",
+        "Release",
+        "--no-build",
+        "--project",
+        "${workspaceFolder}/lab6/Lab6.csproj",
+        "--",
+        "--slave-host",
+        "127.0.0.1",
+        "--port",
+        "5055"
+      ],
+      "dependsOn": "ЛР6: зібрати",
+      "group": "test",
+      "problemMatcher": "$msCompile"
     }
   ]
 }
