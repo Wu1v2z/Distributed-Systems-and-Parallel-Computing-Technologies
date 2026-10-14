@@ -40,6 +40,27 @@
       "cwd": "${workspaceFolder}/lab4",
       "console": "integratedTerminal",
       "stopAtEntry": false
+    },
+    {
+      "name": "ЛР5 — обчислити L2 на slave-вузлі",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "ЛР5: зібрати",
+      "program": "${workspaceFolder}/lab5/bin/Release/net8.0/Lab5.dll",
+      "cwd": "${workspaceFolder}/lab5",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
+    },
+    {
+      "name": "ЛР5 — slave-сервер L2",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "ЛР5: зібрати",
+      "program": "${workspaceFolder}/lab5/bin/Release/net8.0/Lab5.dll",
+      "args": ["--server", "--port", "5055"],
+      "cwd": "${workspaceFolder}/lab5",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
     }
   ]
 }

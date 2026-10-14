@@ -107,6 +107,55 @@
       "dependsOn": "ЛР4: зібрати",
       "group": "test",
       "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "ЛР5: зібрати",
+      "type": "process",
+      "command": "dotnet",
+      "args": [
+        "build",
+        "${workspaceFolder}/lab5/Lab5.csproj",
+        "-c",
+        "Release"
+      ],
+      "group": "build",
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "ЛР5: обчислити L2 на цьому вузлі",
+      "type": "process",
+      "command": "dotnet",
+      "args": [
+        "run",
+        "-c",
+        "Release",
+        "--no-build",
+        "--project",
+        "${workspaceFolder}/lab5/Lab5.csproj"
+      ],
+      "dependsOn": "ЛР5: зібрати",
+      "group": "test",
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "ЛР5: запустити slave-сервер",
+      "type": "process",
+      "command": "dotnet",
+      "args": [
+        "run",
+        "-c",
+        "Release",
+        "--no-build",
+        "--project",
+        "${workspaceFolder}/lab5/Lab5.csproj",
+        "--",
+        "--server",
+        "--port",
+        "5055"
+      ],
+      "dependsOn": "ЛР5: зібрати",
+      "group": "test",
+      "problemMatcher": "$msCompile"
     }
   ]
 }
