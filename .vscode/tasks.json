@@ -49,6 +49,35 @@
       ],
       "group": "test",
       "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "ЛР3: зібрати",
+      "type": "process",
+      "command": "dotnet",
+      "args": [
+        "build",
+        "${workspaceFolder}/lab3/Lab3.csproj",
+        "-c",
+        "Release"
+      ],
+      "group": "build",
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "ЛР3: запустити експеримент",
+      "type": "process",
+      "command": "dotnet",
+      "args": [
+        "run",
+        "-c",
+        "Release",
+        "--no-build",
+        "--project",
+        "${workspaceFolder}/lab3/Lab3.csproj"
+      ],
+      "dependsOn": "ЛР3: зібрати",
+      "group": "test",
+      "problemMatcher": "$msCompile"
     }
   ]
 }

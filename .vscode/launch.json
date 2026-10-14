@@ -20,6 +20,16 @@
       "cwd": "${workspaceFolder}/lab2",
       "console": "integratedTerminal",
       "stopAtEntry": false
+    },
+    {
+      "name": "ЛР3 — порівняльний експеримент N=1..50",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "ЛР3: зібрати",
+      "program": "${workspaceFolder}/lab3/bin/Release/net8.0/Lab3.dll",
+      "cwd": "${workspaceFolder}/lab3",
+      "console": "integratedTerminal",
+      "stopAtEntry": false
     }
   ]
 }
